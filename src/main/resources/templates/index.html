@@ -24,7 +24,11 @@
                 <td th:text = "${employee.firstName}"></td>
                 <td th:text = "${employee.lastName}"></td>
                 <td th:text = "${employee.email}"></td>
-                <td><a th:href = "@{/updateForm/{id} (id=${employee.id})}" class="btn btn-success">Update</a></td>
+                <td class="d-flex justify-content-around">
+                    <a th:href = "@{/updateForm/{id} (id=${employee.id})}" class="btn btn-success">Update</a>
+                    <a th:href = "@{/deleteEmployee/{id} (id=${employee.id})}" class="btn btn-danger">Delete</a>
+
+                </td>
 
 
 
