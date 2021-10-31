@@ -9,7 +9,7 @@
 <div class="container my-2">
         <h1>Employee List</h1>
         <br>
-        <a th:href = "@{/newEmployeeForm}" class="btn btn-primary btn-sm mb-3 ">Add Employee</a>
+        <a th:href = "@{/newEmployeeForm}" class="btn btn-primary  mb-3 ">Add Employee</a>
         <table class="table table-striped table-bordered">
             <thead class="table-dark">
             <tr>
@@ -24,6 +24,7 @@
                 <td th:text = "${employee.firstName}"></td>
                 <td th:text = "${employee.lastName}"></td>
                 <td th:text = "${employee.email}"></td>
+                <td><a th:href = "@{/updateForm/{id} (id=${employee.id})}" class="btn btn-success">Update</a></td>
 
 
 
